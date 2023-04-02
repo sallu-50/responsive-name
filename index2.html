@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive Navbar</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style2.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<header>
+		<div class="navbar">
+			<div class="logo">CRYPTO</div>
+				<ul class="links">
+					<li><a href="">home</a></li>
+					<li><a href="">service</a></li>
+					<li><a href="">home</a></li>
+					<li><a href="">home</a></li>
+				</ul>
+				<a href="" class="action_btn">Login</a>
+				<div class="toggle_btn">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</div>
+		</div>
+		<div class="dropdown_menu ">
+					<li><a href="">home</a></li>
+					<li><a href="">service</a></li>
+					<li><a href="">home</a></li>
+					<li><a href="">home</a></li>
+		</div>
+	</header>
+
+	<div class="sectio">
+		<h1>salman</h1>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ut, consectetur accusantium cupiditate quasi assumenda in sint labore eum. Suscipit!</p>
+	</div>
+
+	<script>
+		const toggleBtn = document.querySelector('.toggle_btn')
+		const toggleBtnIcon = document.querySelector('.toggle_btn i')
+		const dropDownMenu = document.querySelector('.dropdown_menu')
+
+		toggleBtn.onclick = function(){
+			dropDownMenu.classList.toggle('open')
+			const isOpen = dropDownMenu.classList.contains('open')
+
+			
+		}
+	</script>
+</body>
+</html>
